@@ -3656,7 +3656,7 @@
 
 
 
-	/************---------MY SHITTY SHITTY OVERIDES------------*************/
+	/************---------MY *&^%#$@ OVERIDES------------*************/
 	/*layout tweaks*/
 	@media screen and (min-width: 1000px){
 		.box.big {
@@ -3737,6 +3737,17 @@
 	#mc_embed_signup_scroll input.email{
 		margin-bottom: 12px;
 	}
+
+	/*---------SWEET MODAL--------------*/
+	.sweet-modal-buttons{
+		text-align: center !important; 
+	}
+	.sweet-modal-buttons a.greenB.button, .sweet-modal-buttons button.greenB {
+    	padding: 0 30px;
+    }
+    .sweet-modal-box.alert .sweet-modal-content {
+    	padding-bottom: 0px;
+    }
 
 
 	/*---------backgrounds------------*/
