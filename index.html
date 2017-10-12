@@ -53,7 +53,9 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner" id="prototype">
-					<h2 class="for-directional-header">You'll Rock. They'll Eat.</h2>
+					<!-- DAVID: adding refresh link and changed h2 class to an id. refresh link blank before video begins, fills after it ends. Here I have filled the link locally in the href location. Once the website is up, add the "http://www.." address-->
+					<h2 id="for-directional-header">You'll Rock. They'll Eat.</h2>
+					<a id = "refresh-page" href="file:///Users/davidritz/Documents/GitHub/SJ_marketing/index.html"> </a>
 					<h4 id="directional-header">Play video <em>through to the end</em> to see how it'll work.</h4>
 					<div id="player">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/ljQqApD4vYo" frameborder="0" allowfullscreen></iframe>
@@ -354,7 +356,7 @@
 
 				}(document, "script", "twitter-wjs"));</script>
 
-<a href="https://twitter.com/intent/tweet?screen_name=soupjammer" class="twitter-mention-button" data-show-count="false">Tweet to @soupjammer</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- <a href="https://twitter.com/intent/tweet?screen_name=soupjammer" class="twitter-mention-button" data-show-count="false">Tweet to @soupjammer</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 <!--<a class="twitter-share-button"href="https://twitter.com/intent/tweet?text=Hello%20world"data-size="large">Tweet</a> -->
 
 			<!--End of Twitter widgets (David)-->
@@ -494,10 +496,20 @@
 							});
 							//beginning of DAVID edits
 
-							//Remove banner after video plays...
+							//Change sub banners after video plays...
 							var bannerValue = document.getElementById('directional-header');
 							console.log('bannerValue is', bannerValue);
 							bannerValue.innerText = ' ';
+							
+							// Sub banner with link...
+							var bannerRefresh = document.getElementById('refresh-page');
+							console.log('bannerRefresh is', bannerRefresh);
+							bannerRefresh.innerText = 'Refresh this page to play the demo again!';
+
+							//Change header after video plays...
+							var headerValue = document.getElementById('for-directional-header');
+							console.log('headerValue is', headerValue);
+							headerValue.innerText = 'Demo Complete!'
 
 
 
