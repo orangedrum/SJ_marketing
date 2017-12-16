@@ -66,7 +66,11 @@
       client.recordEvent('pageviews', {
         title: document.title
       });
-    });
+
+      // Show incoming visitors
+      client.draw(new Keen.Query('count', {
+        event_collection: 'pageload'
+      }) document.getElementsById('keenchart'));
   </script>
   <!--END KEEN IO-->
 
@@ -247,6 +251,8 @@
       <div class="button-block"><a href="mailto:support@soupjam.org?subject=SoupJam User!" target="_blank" class="social-button w-inline-block"><img src="images/email-icon.png" width="21px"></a><a href="http://facebook.com/soupjam" target="_blank" class="social-button w-inline-block"><img src="images/facebook-icon.png" width="21px"></a><a href="http://twitter.com/soupjammer" target="_blank" class="social-button w-inline-block"><img src="images/twitter-icon.png" width="21px" data-w-id="e8ae63f6-1fa3-4a70-494a-5adc032fddad"></a></div>
     </div>
   </div>
+
+  <div id="keenchart"></div>
 
   <!-- Scripts -->
       <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
