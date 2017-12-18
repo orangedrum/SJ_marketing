@@ -1,559 +1,322 @@
-<!DOCTYPE HTML>
-<!--
-	Cogent by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>
-		<title>SoupJam | Can local music feed the hungry?</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Tue Dec 12 2017 20:33:27 GMT+0000 (UTC)  -->
+<html data-wf-page="59fb99ee65a33a00015bfd31" data-wf-site="59fb99ee65a33a00015bfd30">
+<head>
+  <meta charset="utf-8">
+  <title>SoupJam | Can local music feed the hungry?</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/soupjam-74f1074536c891448906b7d64a22fe9.webflow.css" rel="stylesheet" type="text/css">
+  
+  <!--JQUERY-->
+    <script src="js/jquery-3.2.1.min.js"></script>
 
+  <!--sweetmodal css-->
+    <link rel="stylesheet" href="js/sweetmodal/jquery.sweet-modal.min.css" /> 
 
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Bitter:400,700,400italic"]
+        }
+      });
+    </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
 
-		<!--Facebook meta-->
-		<meta property="og:url"           content="http://www.soupjam.org" />
-		<meta property="og:type"          content="website" />
-		<meta property="og:title"         content="SoupJam | Can local music feed the hungry?" />
-		<meta property="og:description"   content="A social experiment attempting to find out if we can feed the needy with the help of local music and caring sponsors." />
-		<meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+  <link href="images/soupfavicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip-slate.png" rel="apple-touch-icon">
 
+  <!--GOOGLE ADSENSE-->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1191965558111645",
+      enable_page_level_ads: true
+    });
+  </script>
+  <!--END GOOGLE ADSENSE-->
 
+</head>
+<body>
+  <!--FACEBOOK PIXEL ANALYTICS-->  
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '267422253786232',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.11'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
 
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!--END FACEBOOK PIXEL ANALYTICS-->
 
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <header class="navbar">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-clearfix w-col w-col-4"><img src="images/soupjamlogo.png" width="63" class="logo"></div>
+        <div class="nav-column w-col w-col-8"><a href="#SubscribeSection" data-ix="modal3" data-w-id="674db23b-5357-29ac-5d83-f96c82dcb2fd" class="nav-link">Subscribe</a></div>
+      </div>
+    </div>
+  </header>
+  <div class="section hero souphero">
+    <div class="w-container">
+      <div class="center-house" id="demo">
+        
+        <!--PRE DEMO-->
+        <div class="videoWrapper">
+          <div id="player">
+            <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0"></iframe>
+          </div>
+        </div>
+        <!--POST DEMO-->
+        <!-- <img src="images/soupcircle.png" width="400" srcset="images/soupcircle-p-500.png 500w, images/soupcircle.png 512w" sizes="(max-width: 479px) 100vw, 400px"></div> -->
 
-		<!--JQUERY-->
-		<script src="assets/js/jquery-3.2.1.min.js"></script>
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <h1 class="hero-header text-right w-hidden-small w-hidden-tiny">You Rock.</h1>
+          <h1 class="hero-iphone hero-header w-hidden-main w-hidden-medium">You Rock. He Eats.</h1>
+        </div>
+        <div class="w-hidden-small w-col w-col-6">
+          <h1 class="hero-header w-hidden-small w-hidden-tiny">He Eats.</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--according to browers, THIS is where the end div for souphero goes-->
+  <div class="section black">
+    <div class="feature-text">
+      <!--incase we want to bait potential advertisers<img src="http://www.ourtownsarasota.com/wp-content/uploads/2017/08/600x160-ad-placeholder.jpg" height="auto" alt="">-->
+      <img src="https://beachnboat.com/wp-content/uploads/2014/04/3-4-banner.jpg">
+    </div>
+  </div>
+  <div class="section hero">
+    <div class="center-house w-container"><img src="images/NewMusicHeadline.png" srcset="images/NewMusicHeadline.png 500w, images/NewMusicHeadline.png 800w, images/NewMusicHeadline.png 1080w, images/NewMusicHeadline.png 1282w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 940px">
+      <h2>Check back every week for a new artist</h2>
+    </div>
+  </div>
+  <div class="w-row">
+    <div class="hub hub-musician w-col w-col-4"><img src="images/band.png" alt="illustration of a band playing live" class="image">
+      <p class="hub-p">Discover new local bands</p>
+    </div>
+    <div class="hub w-col w-col-4"><img src="images/Companies.png" alt="illustration of an old school cash register with &quot;sale&quot; tag up" srcset="images/Companies-p-500.png 500w, images/Companies-p-800.png 800w, images/Companies-p-1080.png 1080w, images/Companies-p-1600.png 1600w, images/Companies-p-2000.png 2000w, images/Companies.png 2048w" sizes="(max-width: 479px) 97vw, (max-width: 767px) 320px, (max-width: 991px) 32vw, 320px" class="image-2">
+      <p class="hub-p">Our Sponsors pay per play.</p>
+    </div>
+    <div class="hub w-col w-col-4"><img src="images/hungry.png" alt="illustration of someone serving soup to someone else" class="image-3">
+      <p class="hub-p">The hungry are fed with every play.</p>
+    </div>
+  </div>
+  <div id="SubscribeSection" class="section grey">
+    <h1 class="heading">Subscribe to SoupJam</h1>
+    <h3>for new music every week</h3>
+    <div class="w-container">
+      <div>
+        <!--Subscription Form-->
+        <div class="w-form">
+          <!-- NASTY MailChimp Signup Forms -->
 
-		<!--sweetmodal css-->
-		<link rel="stylesheet" href="assets/js/sweetmodal/jquery.sweet-modal.min.css" /> 
+            <div id="mc_embed_signup">
+            <form action="https://soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=002aec07ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form formjam w-clearfix" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              
+            <div class="mc-field-group">
+              <input type="email" value="" name="EMAIL" class="required email text-field w-input" id="mce-EMAIL" placeholder="Enter your email">
+            </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="firstkpi submit-button subscribe w-button"></div>
+                </div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='THOUGHTS';ftypes[2]='text';fnames[3]='LNAME';ftypes[3]='text';fnames[4]='LIKERTYUI';ftypes[4]='number';fnames[5]='NUMBER2';ftypes[5]='number';fnames[6]='TEXTAREAY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
 
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!--Band Audition Form-->
+        <div class="w-form">
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="https://soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=1783de90c1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form formjam w-clearfix" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+          <h3 class="heading-2">audition to be our next band</h3>
+            
+          <div class="mc-field-group">
+            <input type="text" value="" name="BAND" placeholder="Enter your band&#x27;s name" class="required w-input" id="mce-BAND">
+          </div>
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" placeholder="Enter your band&#x27;s email" class="required email w-input" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group">
+            <input type="url" value="" name="LINK" placeholder="Link to your music" class="required url w-input" id="mce-LINK">
+          </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div class="clear"><input type="submit" value="Audition" name="subscribe" id="mc-embedded-subscribe" class="submit-button subscribe w-button"></div>
+              </div>
+          </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+      <div>
+        <!--Sponsor Form-->
+        <div class="w-form">
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="https://drumalesson.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=0426770760" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate w-clearfix" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <h3>sign up to learn more about becoming a sponsor</h3>
+            
+            <div class="mc-field-group">
+              <input type="text" value="" name="CONAME" placeholder="Enter your company&#x27;s name"  class="required w-input" id="mce-CONAME">
+            </div>
+            <div class="mc-field-group">
+              <input type="text" value="" name="COCONTACT" placeholder="Enter Name of Company Contact" class="required w-input" id="mce-COCONTACT">
+            </div>
+            <div class="mc-field-group">
+              <input type="email" value="" name="EMAIL" placeholder="Enter your company&#x27;s email" class="w-input required email" id="mce-EMAIL">
+            </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_362bea6e58525666e1a4b8f86_0426770760" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-button subscribe w-button"></div>
+              </div>
+          </form>
+          </div>
 
-	</head>
-	<body class="landing">
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bk-white">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-clearfix w-col w-col-6">
+          <h2>Share it! #soupjam</h2>
+          <p>Share and spread the phenomenon to help make sure we keep your soup jammin’. Use #soupjam on twitter and follow us on facebook for all the latest.</p>
+          <div class="social-widget w-widget w-widget-twitter"><iframe src="https://platform.twitter.com/widgets/tweet_button.html#url=http%3A%2F%2Fwww.soupjam.org&amp;counturl=www.soupjam.org&amp;text=Check%20out%20%40soupjammer%20at%20http%3A%2F%2Fwww.soupjam.org%2F!%20Listen%20to%20music%20for%20a%20good%20cause!&amp;count=horizontal&amp;size=m&amp;dnt=true" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 62px; height: 21px;"></iframe>
+            <div class="w-widget-twitter-count-shim">
+              <div class="w-widget-twitter-count-inner">...</div>
+            </div>
+          </div>
+          <div class="social-widget w-widget w-widget-gplus">
+            <div class="g-plusone" data-href="http://webflow.com" data-size="tall" data-annotation="bubble" data-recommendations="false"></div>
+          </div>
+          <div class="social-widget w-widget w-widget-facebook"><iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Ffedwithmusic&amp;layout=box_count&amp;locale=en_US&amp;action=like&amp;show_faces=false&amp;share=false" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 100px; height: 40px;"></iframe></div>
+        </div>
+        <div class="center w-col w-col-6"><img src="images/third-section.jpg" width="250" srcset="images/third-section-p-500.jpeg 500w, images/third-section.jpg 588w" sizes="(max-width: 767px) 100vw, 250px" class="image-4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section grey footer">
+    <div class="w-container">
+      <p class="footer-text">SoupJam © 2017</p>
+      <div class="button-block"><a href="mailto:support@soupjam.org?subject=SoupJam User!" target="_blank" class="social-button w-inline-block"><img src="images/email-icon.png" width="21px"></a><a href="http://facebook.com/soupjam" target="_blank" class="social-button w-inline-block"><img src="images/facebook-icon.png" width="21px"></a><a href="http://twitter.com/soupjammer" target="_blank" class="social-button w-inline-block"><img src="images/twitter-icon.png" width="21px" data-w-id="e8ae63f6-1fa3-4a70-494a-5adc032fddad"></a></div>
+    </div>
+  </div>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a id="logo" href="index.html" alt="SoupJam"><img src="images/soupjamlogo.png"></a></h1>
-				<nav id="nav">
-					<ul>
-						<!--<li><a href="index.html">Home</a></li>-->
-						<li><a href="artistsmain.html">Artists</a></li>
-						<li><a href="sponsor.html">Sponsor</a></li>
-						<li><a href="#subscribe" class="button">Get Involved</a></li>
-					</ul>
-				</nav>
-			</header>
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner" id="prototype">
-					<!-- DAVID: adding refresh link and changed h2 class to an id. refresh link blank before video begins, fills after it ends. Here I have filled the link locally in the href location. Once the website is up, add the "http://www.." address-->
-					<h2 id="for-directional-header">You'll Rock. They'll Eat.</h2>
-					<a id= "refresh-page" href="index.html"> </a>
-					<h4 id="directional-header">Play video <em>through to the end</em> to see how it'll work.</h4>
-					<div id="player">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ljQqApD4vYo" frameborder="0" allowfullscreen></iframe>
-					</div>
-
-					  <!-- Load Facebook SDK for JavaScript -->
-					  <!-- <div id="fb-root"></div>
-					  <script>(function(d, s, id) {
-					    var js, fjs = d.getElementsByTagName(s)[0];
-					    if (d.getElementById(id)) return;
-					    js = d.createElement(s); js.id = id;
-					    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-					    fjs.parentNode.insertBefore(js, fjs);
-					  }(document, 'script', 'facebook-jssdk'));</script> -->
-
-					  <!-- Your share button code -->
-					  <!-- <div class="fb-share-button" 
-					    data-href="http://www.your-domain.com/your-page.html" 
-					    data-layout="button_count">
-					  </div> -->
-					
-				</div>
-				<p></p>
-
-				<!-- <div class="browser-mockup">
-					<div class="chrome">
-						<span class="url">http://untitledapp.tld</span>
-					</div>
-					<img src="images/banner.jpg" alt="" />
-				</div> -->
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="container">
-					<section class="spotlight left">
-						<div class="row 200%">
-							<div class="4u 12u$(medium)">
-								<span class="image fit"><img src="images/fakeadd_saunapants.png" alt="" /></span>
-							</div>
-							<div class="8u$ 12u$(medium)">
-								<h5>You gave a meal with the help of:</h5>
-								<h2>Wonder Sauna Pants</h2>
-								<p>Actually, Sauna Pants aren't a thing. But if they did exist, they would've been the one's that paid to feed the hungry mouth you just fed. So big thanks to you both! If you're a small business, or know of one you'd like to see here, we're currently seeking partners.
-								</p>
-								<p><a href="sponsor.html" class="button special small">Inquire Here</a></p>
-							</div>
-						</div>
-					</section>
-					<!-- <section class="spotlight right">
-						<div class="row 200%">
-							<div class="8u 12u$(medium)">
-								<h2>Etiam lorem sed tempus magna adipiscing</h2>
-								<p>Phasellus tortor magna, convallis sed felis ut, tempor volutpat lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam posuere feugiat. Nullam porttitor sodales. Tempor volutpat lorem ipsum quam. Phasellus porta lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at tincidunt.</p>
-							</div>
-							<div class="4u$ 12u$(medium) important(medium)">
-								<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
-							</div>
-						</div>
-					</section> -->
-				</div>
-			</section>
-		<!-- One -->
-			<section id="one" class="wrapper style1 how-it-works">
-				<div class="container">
-					<h2>How does this all work?</h2>
-					<div class="row">
-						<div class="4u 12u$(medium)">
-							<h3 class="icon fa-user">Unsigned Artists</h3>
-							<p>Music posted on Soup Jam will come from our authentic and refreshing library of independant artists. We'll be updating our library frequently and will ensure the highest quality.</p>
-						</div>
-						<div class="4u 12u$(medium)">
-							<h3 class="icon fa-home">Local Businesses</h3>
-							<p>Our sponsors are our muscle. Through a new and exciting way to advertise, they can promote themselves by sponsoring with us. It's because of them, you are feeding simply by listening.</p>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<h3 class="icon fa-play">1 Play | 1 Meal</h3>
-							<p>We aim to enable you to feed the world by way of listening. By growing your musical library with us, you'll find a new side of your local community and feed a lot of someones.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		<!-- Three | Pricing -->
-			<section id="three" class="wrapper style3">
-				<div class="container">
-					<div class="row 200%">
-						<a name="subscribe"></a>
-						
-							<div class="8u 12u$(medium)">
-									<h2>Get Involved</h2>
-									<p>We're in the exploratory phases and hoping to grow an audience that can help us build this out. Join our mailing list to receive sneak peaks, special treatment and maybe some backstage passes.</p>
-									<!-- Begin MailChimp Signup Form -->
-									<div id="mc_embed_signup">
-									<form action="//soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=002aec07ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-									    <div id="mc_embed_signup_scroll">
-										
-										<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-									    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-									    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_362bea6e58525666e1a4b8f86_002aec07ab" tabindex="-1" value=""></div>
-									    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-									    </div>
-									</form>
-									</div>
-									<!--End mc_embed_signup-->
-							</div>
-							<div class="4u 12u$(medium)">
-								<h3>Looking for Artists and Sponsors</h3>
-								<p>We're currently building out our first iteration of what Soupjam could look like on the web. If you're an artist and would like free publicity, <a href="artistsmain.html">click here to become an artist</a>! If you're a small business and see value in advertising with us, please <a href="sponsor.html">click here to advertise</a> with us.</p>
-							</div>
-					</div>
-<!-- 					<div class="row 200%">
-						<div class="5u 12u$(medium)">
-							<h2>Augue velit lorem pellentesque <br /> tempus aliquet adipiscing</h2>
-							<p>Vivamus nec odio tempor et aliquam tincidunt. Aliquam lorem cursus dolore consequat feugiat nulla tempus feugiat et lorem tempus lorem ipsum dolor sit amet feugiat tempus.</p>
-						</div>
-						<div class="7u$ 12u$(medium)">
-							<div class="row 200%">
-								<div class="6u 12u$(xsmall)">
-									<ul class="check">
-										<li>Quisque nec enim</li>
-										<li>Maecenas nec convallis risus</li>
-										<li>Scelerisque vulputate leo</li>
-										<li>Nec blandit sed ligula</li>
-										<li>Aliquam nisl nulla</li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<ul class="check">
-										<li>Aliquam nisl nulla</li>
-										<li>Feugiat at malesuada iaculis</li>
-										<li>Sed vulputate magna</li>
-										<li>Tincidunt elit sed rhoncus</li>
-										<li>Quisque nec enim</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div> -->
-				</div>
-			</section>
-
-		<!-- Four -->
-<!-- 			<section id="four" class="wrapper style4 special">
-				<div class="container">
-					<header class="major">
-						<h2>Magna feugiat sed consequat</h2>
-						<p>Vivamus nec odio tempor et aliquam tincidunt aliquam lorem dolore consequat feugiat.</p>
-					</header>
-					<div class="plans">
-						<div class="row 200% uniform">
-							<div class="4u 12u$(medium)">
-								<div class="plan">
-									<h3>Basic</h3>
-									<ul>
-										<li><strong>Quisque nec enim</strong></li>
-										<li><strong>Maecenas convallis risus</strong></li>
-										<li>Scelerisque vulputate</li>
-										<li>Nec blandit magna</li>
-										<li>Feugiat malesuada</li>
-									</ul>
-									<span class="price"><strong>$4</strong> / mo</span>
-									<a href="#" class="button special big fit">Sign Up</a>
-								</div>
-							</div>
-							<div class="4u 12u$(medium)">
-								<div class="plan">
-									<h3>Pro</h3>
-									<ul>
-										<li><strong>Quisque nec enim</strong></li>
-										<li><strong>Maecenas convallis risus</strong></li>
-										<li><strong>Scelerisque vulputate</strong></li>
-										<li><strong>Nec blandit magna</strong></li>
-										<li>Feugiat malesuada</li>
-									</ul>
-									<span class="price"><strong>$9</strong> / mo</span>
-									<a href="#" class="button special big fit">Sign Up</a>
-								</div>
-							</div>
-							<div class="4u$ 12u$(medium)">
-								<div class="plan">
-									<h3>Max</h3>
-									<ul>
-										<li><strong>Quisque nec enim</strong></li>
-										<li><strong>Maecenas convallis risus</strong></li>
-										<li><strong>Scelerisque vulputate</strong></li>
-										<li><strong>Nec blandit magna</strong></li>
-										<li><strong>Feugiat malesuada</strong></li>
-									</ul>
-									<span class="price"><strong>$14</strong> / mo</span>
-									<a href="#" class="button special big fit">Sign Up</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<p>Tempor et aliquam tincidunt aliquam lorem dolore? <a href="#" class="button inline">Learn More</a></p>
-				</div>
-			</section> -->
-
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-					<div class="row 200%">
-						<section class="4u 12u$(medium) about">
-							<h3>Who's Behind This?</h3>
-							<p>
-								<span class="biocircle left">
-								</span>
-							Soup Jam is the brain child of our founder, Jean Kaluza. Even after losing her ability to play drums, the urge to create and participate as a musician never went away. Transforming herself from professional musician to a <a target="_blank" href="http://www.orangedrum.com">Product Designer</a>, Jean dreams of using her super powers to fuse communities together with the help of local musicians and interative design.</p>
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-							<h3>Blog</h3>
-							<p>Coming soon! Currently, we're seeking authors for a musician's blog. If you're interested, <a href="artistsmain.html">subscribe as a musician</a> to learn more!</p>
-							<h3>Get Social</h3>
-							<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-							<div class="addthis_inline_follow_toolbox"></div>
-							<!-- <ul class="updates">
-								<li>
-									<p><a href="#">Phasellus tortor magna, convallis sed felis tempor volutpat lorem quam. Phasellus lacinia.</a></p>
-									<span class="timestamp">March 29, 2015</span>
-								</li>
-								<li>
-									<p><a href="#">Feugiat quam posuere feugiat. Nullam porttitor sodales lorem ipsum dolor sit amet.</a></p>
-									<span class="timestamp">March 24, 2015</span>
-								</li>
-								<li>
-									<p><a href="#">Rhoncus at tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam posuere.</a></p>
-									<span class="timestamp">March 15, 2015</span>
-								</li>
-								<li><img src="images/svg/rocker.svg"/>Rock gesture by Alina Oleynik from the Noun Project</li>
-							</ul> -->
-						</section>
-						<section class="4u$ 6u$(medium) 12u$(xsmall)">
-							<h3>Contact</h3>
-							<ul class="labeled-icons">
-								<li>
-									<h4 class="icon fa-home"><span class="label">Address</span></h4>
-									PO box 84304<br/>
-									Maitland, Florida 32751
-								</li>
-								<!-- <li>
-									<h4 class="icon fa-phone"><span class="label">Phone</span></h4>
-									(800) 000-0000
-								</li> -->
-								<li>
-									<h4 class="icon fa-envelope"><span class="label">Email</span></h4>
-									<a href="#">support@soupjam.org</a>
-								</li>
-								<li>
-									<h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
-									<a href="https://www.facebook.com/soupjam/">facebook.com/soupjam</a>
-								</li>
-								<li>
-									<h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
-									<a href="https://twitter.com/soupjammer">@soupjammer</a>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-				<ul class="copyright">
-					<li>&copy; Untitled Corp. All rights reserved.</li>
-					<li><a href="#">Terms of Use</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</div>
-
-		<!-- Scripts -->
-			<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  <!-- Scripts -->
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+      <script src="js/jquery.dropotron.min.js"></script>
+      <script src="js/jquery.scrollgress.min.js"></script>
+      <script src="js/skel.min.js"></script>
+      <script src="js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="js/main.js"></script>
+  <!--endScripts-->
+  
+  <!--YouTube DEMO-->
+  <!--FOR ALERT AT END OF PLAYER-->
+    <script src="http://www.youtube.com/player_api"></script>
+    <script src="js/sweetmodal/jquery.sweet-modal.min.js"></script>
 
-			<!--Twitter widgets load (David)-->
-			<script>window.twttr = (function(d, s, id) {
-  				var js, fjs = d.getElementsByTagName(s)[0],
-   					t = window.twttr || {};
- 				if (d.getElementById(id)) return t;
-  				js = d.createElement(s);
-  				js.id = id;
- 				js.src = "https://platform.twitter.com/widgets.js";
-  				fjs.parentNode.insertBefore(js, fjs);
-
-  				t._e = [];
-  				t.ready = function(f) {
-    				t._e.push(f);
-  				};
-
-  				return t;
-
-				}(document, "script", "twitter-wjs"));</script>
-
-<!-- <a href="https://twitter.com/intent/tweet?screen_name=soupjammer" class="twitter-mention-button" data-show-count="false">Tweet to @soupjammer</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-<!--<a class="twitter-share-button"href="https://twitter.com/intent/tweet?text=Hello%20world"data-size="large">Tweet</a> -->
-
-			<!--End of Twitter widgets (David)-->
-			<!--addthis code-->
-		<!--SHARE Go to www.addthis.com/dashboard to customize your tools --> 
-		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-593302d8e9ba8f57"></script> 
- 
-
-			<!--FOR ALERT AT END OF PLAYER-->
-			    <script src="http://www.youtube.com/player_api"></script>
-				<script src="assets/js/sweetmodal/jquery.sweet-modal.min.js"></script>
-
-			    <script>
-
-			        // create youtube player
-			        var player;
-			        function onYouTubePlayerAPIReady() {
-			            player = new YT.Player('player', {
-			              height: '390',
-			              width: '640',
-			              videoId: 'gFrCyU_1zw0',
-			              events: {
-			                onReady: onPlayerReady,
-			                onStateChange: onPlayerStateChange
-			              }
-			            });
-			        }
-
-			        // autoplay video
-			        function onPlayerReady(event) {
-			            //event.target.playVideo();
-			        }
-
-			        // when video ends
-			        function onPlayerStateChange(event) {        
-			            if(event.data === 0) { 
-
-			            	//JQUERY-CONFIRM
-				   //          $('.subscribeJammer').click(function (e) {	
-				   //          	$.alert({
-							// 	    title: 'Alert!',
-							// 	    content: 'Simple alert!',
-							// 	});
-							// });
-
-			            	        
-			            	//NOTE: THIS DON'T WORK!! var mailChimpin = $('<p>this is going to be mailchimp</p>'); 
-			            	//http://sweet-modal.adepto.as/
-					
-
-			                $.sweetModal({
-								content: 'And just like that you would have fed someone!<br> Like the idea? Help us spread the word. <p> <a class="twittering" target = "blank_target" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check%20out%20@soupjammer%20at%20http://www.soupjam.org/!%20Listen%20to%20music%20for%20a%20good%20cause!"data-size="large"><img src="images/Twitter-logo-300x299.png"></a><a class="booking" target="_blank" href="http://facebook.com/soupjam/"><img src="images/Facebook-logo-300x299.png"></a></p>',
-								title: 'BAM! You would have fed someone!',
-								icon: $.sweetModal.ICON_SUCCESS,
-
-								buttons: [
-									{
-										label: 'Subscribe',
-										classes: 'greenB',
-										// action: function(sweetModal) {
-
-										// }
-
-										//'<p>This will be <a href=\'#\'>a link</a>. Woot!</p>'
-										action: function(sweetModal){
-											//Solution1
-											// $.sweetModal({
-											// 	title: 'HTML Content',
-											// 	content:
-											// 	'<div id="mc_embed_signup"><form action="//soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=002aec07ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll"><div class="mc-field-group"><label for="mce-EMAIL">Email Address </label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_362bea6e58525666e1a4b8f86_002aec07ab" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></div></form></div>'
-											// 	});
-
-
-											
-											$.sweetModal({
-												title: {
-													tab1: {
-														label: 'Join our mailing list',
-														icon: '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#000000" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg>'
-													},
-
-													tab2: {
-														label: 'Click to Audition',
-														icon: '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#000000" d="M12,17L7,12H10V8H14V12H17L12,17M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" /></svg>'
-													},
-
-													tab3: {
-														label: 'Click to Sponsor',
-														icon: '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#000000" d="M12,17L7,12H10V8H14V12H17L12,17M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" /></svg>'
-													}
-												},
-
-												content: {
-													tab1: '<p>We are in the exploratory phases and hoping to grow an audience that can help us build this out. Join our mailing list to give us your feedback, help us design, and get pampered with indefinite VIP status!</p><div id="mc_embed_signup"><form action="//soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=002aec07ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll"><div class="mc-field-group"><label for="mce-EMAIL">Email Address </label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_362bea6e58525666e1a4b8f86_002aec07ab" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></div></form></div><p>Do not worry. We will not share your data with any outside party.</p>',
-													
+    <script>
+      //FACEBOOK ANALYTICS EVENTS
+      $(".firstkpi").click(function(){
+          //alert("test");
+          // Add this to a button's onclick handler
+          FB.AppEvents.logEvent("subscribed");
+      });
 
 
 
-													//messy musician form
-													tab2: 'SoupJam is open to any unsigned, independent artists who wish for help promoting their music and receiving fair compensation for their work. Please make sure the link to your music works as we ca not reply to incomplete forms.<div id="mc_embed_signup"><form action="//soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=1783de90c1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll"><div class="indicates-required"><span class="asterisk">*</span> indicates required</div><div class="mc-field-group"><label for="mce-BAND">Band Name  <span class="asterisk">*</span></label><input type="text" value="" name="BAND" class="required" id="mce-BAND"></div><div class="mc-field-group"><label for="mce-EMAIL">Contact Email Address  <span class="asterisk">*</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div><div class="mc-field-group"><label for="mce-LINK">Link to your music  <span class="asterisk">*</span></label><input type="url" value="" name="LINK" class="required url" id="mce-LINK"></div><div class="mc-field-group input-group"><strong>Note </strong><ul><li><input type="checkbox" value="1" name="group[11385][1]" id="mce-group[11385]-11385-0"><label for="mce-group[11385]-11385-0">By checking this box you agree your group is not subject to the terms and conditions of any licensin</label></li></ul></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_362bea6e58525666e1a4b8f86_1783de90c1" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></div></form></div><p>Do not worry. SoupJam intends for your music to stay your music and are not interested in rights or loyalties.</p>',
-													
-													//equally messy sponsor list
-													tab3: 'SoupJam is proud to offer a new feel-good altruistic way to market that is great for all businesses! Please make sure all information is correct as we can not reply to incomplete forms.<div id="mc_embed_signup"><form action="//drumalesson.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=0426770760" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><div id="mc_embed_signup_scroll"><div class="indicates-required"><span class="asterisk">*</span> indicates required</div><div class="mc-field-group"><label for="mce-CONAME">Company Name  <span class="asterisk">*</span></label><input type="text" value="" name="CONAME" class="required" id="mce-CONAME"></div><div class="mc-field-group"><label for="mce-COCONTACT">Contact Name  <span class="asterisk">*</span></label><input type="text" value="" name="COCONTACT" class="required" id="mce-COCONTACT"></div><div class="mc-field-group"><label for="mce-EMAIL">Contact Email  <span class="asterisk">*</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div><div class="mc-field-group"><label for="mce-PRICETEST">What price would you pay for an online ad spot?  <span class="asterisk">*</span></label><select name="PRICETEST" class="required" id="mce-PRICETEST"><option value=""></option><option value="$1/per ad">$1/per ad</option><option value=".50/per ad">.50/per ad</option><option value=".05/per ad">.05/per ad</option><option value="&gt;.05/per ad">&gt;.05/per ad</option></select></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_362bea6e58525666e1a4b8f86_0426770760" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></div></form></div> Do not worry. You are simply initiating communication here. You will be under no obligation to us by submitting this form. We look forward to meeting you!'
-												}
-											});
+      // create youtube player
+      var player;
+      function onYouTubePlayerAPIReady() {
+          player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'gFrCyU_1zw0',
+            events: {
+              onReady: onPlayerReady,
+              onStateChange: onPlayerStateChange
+            }
+          });
+      }
 
-											//Solution2
-											// var $root = $('html, body');
-											// $('a').click(function() {
-											//     $root.animate({
-											//         scrollTop: $( $.attr(this, 'href') ).offset().top
-											//     }, 500);
-											//     return false;
-											// });
+      // autoplay video
+      function onPlayerReady(event) {
+          //event.target.playVideo();
+      }
+      function onPlayerStateChange(event) {  
+        if(event.data === 0) {
+          //alert("Hello! I work. Something else is broken.");
+            $.sweetModal({
+              content: 'And just like that you would have fed someone!<br> Like the idea? Help us spread the word. <p style="text-align: center; margin-top: 30px;"> <a class="twittering" target = "blank_target" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check%20out%20@soupjammer%20at%20http://www.soupjam.org/!%20Listen%20to%20music%20for%20a%20good%20cause!"data-size="large"><img src="images/twitter-logo-button.png"></a>  <a class="booking" target="_blank" href="http://facebook.com/soupjam/"><img src="images/facebook-logo-button.png"></a></p>',
+              title: 'BAM! You would have fed someone!',
+              icon: $.sweetModal.ICON_SUCCESS
+            });
 
-											//Solution3
-											//$('a.greenB')[0].click();
-											// if (this.href.match(location.host) || 
-											//     this.href.toLowerCase().indexOf('javascript') !== -1) {
-											//         // allow
-
-											// }
-
-											//Solution4
-											// $("javascript:void(0)")
-											//    .each(function()
-											//    { 
-											//       this.href = this.href.replace(/^javascript:void\(0\)/, 
-											//          "#subscribe");
-											//    });
-
-											//Solution 5
-											
-										}
-									}
-								]
-							});
-							//beginning of DAVID edits
-
-							//Change sub banners after video plays...
-							var bannerValue = document.getElementById('directional-header');
-							console.log('bannerValue is', bannerValue);
-							bannerValue.innerText = ' ';
-							
-							// Sub banner with link...
-							var bannerRefresh = document.getElementById('refresh-page');
-							console.log('bannerRefresh is', bannerRefresh);
-							bannerRefresh.innerText = 'Refresh this page to play the demo again!';
-
-							//Change header after video plays...
-							var headerValue = document.getElementById('for-directional-header');
-							console.log('headerValue is', headerValue);
-							headerValue.innerText = 'Demo Complete!'
+            //alert('You have fed a person! Thank you!');
+            var soupjamBadge = $('<img src="images/soupcircle.png" width="400" srcset="images/soupcircle-p-500.png 500w, images/soupcircle.png 512w" sizes="(max-width: 479px) 100vw, 400px"></div>');
+           //remove player, add soupjam block
+            $('#demo').append(soupjamBadge);
+            $('.videoWrapper').remove();
+        }
+      }
+    </script>
 
 
-
-							var a2a_config = a2a_config || {};
-							a2a_config.linkname = "Soup Jam";
-							a2a_config.linkurl = "http://www.soupjam.org";
-							a2a_config.num_services = 2;
-							a2a_config.templates = {
-		    					twitter: "I just fed someone just for listening on ${title} ${link} thanks to @AddToAny music and @suessupershells."
-							};
-
-							
-							//end of DAVID edits
-
-
-			                //alert('You have fed a person! Thank you!');
-			                var leoEather = $('<div class="container"><div class="postplay 6u 12u$(medium)"><span class="svg-award"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="80" viewBox="0 0 48 80" version="1.1"><title>Untitled</title><desc>Created with Sketch.</desc><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M35.35 43.48L35.35 31.21C35.35 31.16 35.36 31.12 35.36 31.07L35.36 6.38C35.36 5.01 34.24 3.89 32.87 3.89L32.52 3.89C31.15 3.89 30.04 5.01 30.04 6.38L30.04 31 30.04 41.84C30.04 42.75 29.81 43.61 29.44 44.38 31.33 43.68 33.28 43.36 35.11 43.46 35.19 43.46 35.27 43.48 35.35 43.48Z" id="Shape"/><path d="M23.82 44.33L24.18 44.33C25.55 44.33 26.66 43.21 26.66 41.84L26.66 31C26.66 30.21 26.28 29.51 25.7 29.06 25.28 28.73 24.76 28.52 24.18 28.52L23.82 28.52C23.24 28.52 22.72 28.73 22.3 29.06 21.72 29.51 21.34 30.21 21.34 31L21.34 31.09 21.34 41.84C21.34 43.21 22.45 44.33 23.82 44.33Z" id="Shape"/><path d="M38.73 31.14L38.73 44.61C39.02 45.03 39.12 45.57 38.96 46.09 38.87 46.37 38.72 46.61 38.53 46.8 38.24 47.34 37.69 47.71 37.04 47.71 36.46 47.71 35.95 47.42 35.65 46.98 35.47 46.95 35.29 46.94 35.11 46.92 32.89 46.75 30.37 47.42 28.07 48.86 25.74 50.32 24.13 52.3 23.87 54.01 23.74 54.87 23.01 55.48 22.17 55.48 22.08 55.48 22 55.48 21.91 55.46 20.97 55.32 20.32 54.44 20.46 53.5 20.75 51.5 22 49.45 23.91 47.7L23.82 47.7C22.32 47.7 20.96 47.12 19.93 46.18 18.85 47.45 17.27 48.27 15.48 48.27L15.13 48.27C11.9 48.27 9.27 45.64 9.27 42.41L9.27 32.71 9.27 11.52C9.27 10.15 8.15 9.03 6.78 9.03L6.42 9.03C5.06 9.03 3.95 10.15 3.95 11.52L3.95 56.4C4.26 57.2 6.17 60.65 9.32 65.91L9.99 67.01C10.07 67.15 10.15 67.28 10.24 67.42 14.96 67.37 19.71 67.39 24.34 67.41 26.65 67.42 28.95 67.43 31.26 67.44L44.05 47.17 44.05 25.84C41.13 25.86 38.77 28.23 38.73 31.14Z" id="Shape"/><path d="M15.13 44.9L15.48 44.9C16.85 44.9 17.97 43.79 17.97 42.42L17.97 41.84 17.97 31.09C17.97 30.25 17.54 29.51 16.9 29.06 16.5 28.78 16.01 28.61 15.48 28.61L15.13 28.61C14.6 28.61 14.11 28.78 13.71 29.06 13.07 29.51 12.64 30.25 12.64 31.09L12.64 42.42C12.64 43.79 13.76 44.9 15.13 44.9Z" id="Shape"/><path d="M44.1 22.46C42.07 22.46 40.21 23.16 38.73 24.32L38.73 6.38C38.73 3.15 36.1 0.52 32.87 0.52L32.52 0.52C29.29 0.52 26.66 3.15 26.66 6.38L26.66 25.72C25.91 25.36 25.07 25.15 24.18 25.15L23.82 25.15C22.17 25.15 20.68 25.84 19.61 26.95 18.55 25.89 17.09 25.24 15.48 25.24L15.13 25.24C14.23 25.24 13.4 25.45 12.64 25.81L12.64 11.52C12.64 8.29 10.01 5.66 6.78 5.66L6.42 5.66C3.2 5.66 0.57 8.29 0.57 11.52L0.57 18.48 0.57 56.31 0.57 56.67C0.57 56.87 0.61 57.05 0.68 57.23 0.69 57.26 0.69 57.29 0.71 57.32 0.71 57.32 0.71 57.33 0.71 57.33 0.98 58.14 2.03 60.31 6.39 67.58L6.65 67.96 6.65 79.48 9.35 79.48 9.35 70.81C14.35 70.74 19.41 70.76 24.32 70.79 26.62 70.8 28.92 70.81 31.22 70.81L31.22 79.48 34.18 79.48 34.18 69.14 47.17 48.56C47.19 48.53 47.2 48.49 47.22 48.46 47.25 48.4 47.28 48.35 47.31 48.29 47.33 48.23 47.34 48.18 47.35 48.13 47.37 48.08 47.39 48.02 47.4 47.97 47.41 47.91 47.41 47.84 47.42 47.78 47.42 47.74 47.43 47.7 47.43 47.66L47.43 22.46 44.1 22.46ZM30.04 41.84L30.04 31 30.04 6.38C30.04 5.01 31.15 3.89 32.52 3.89L32.87 3.89C34.24 3.89 35.36 5.01 35.36 6.38L35.36 31.07C35.36 31.12 35.35 31.16 35.35 31.21L35.35 43.48C35.27 43.48 35.19 43.46 35.11 43.46 33.28 43.36 31.33 43.68 29.44 44.37 29.81 43.61 30.04 42.75 30.04 41.84ZM21.34 31.09L21.34 31C21.34 30.21 21.72 29.51 22.3 29.06 22.72 28.73 23.24 28.52 23.82 28.52L24.18 28.52C24.76 28.52 25.28 28.73 25.7 29.06 26.28 29.51 26.66 30.21 26.66 31L26.66 41.84C26.66 43.21 25.55 44.33 24.18 44.33L23.82 44.33C22.45 44.33 21.34 43.21 21.34 41.84L21.34 31.09ZM12.64 31.09C12.64 30.25 13.07 29.51 13.71 29.06 14.11 28.78 14.6 28.61 15.13 28.61L15.48 28.61C16.01 28.61 16.5 28.78 16.9 29.06 17.54 29.51 17.97 30.25 17.97 31.09L17.97 41.84 17.97 42.42C17.97 43.79 16.85 44.9 15.48 44.9L15.13 44.9C13.76 44.9 12.64 43.79 12.64 42.42L12.64 31.09ZM44.05 47.17L31.26 67.44C28.95 67.44 26.64 67.42 24.34 67.41 19.71 67.39 14.96 67.37 10.24 67.42 10.15 67.29 10.07 67.15 9.99 67.02L9.32 65.91C6.16 60.65 4.26 57.2 3.95 56.4L3.95 11.53C3.95 10.15 5.06 9.03 6.42 9.03L6.78 9.03C8.15 9.03 9.27 10.15 9.27 11.53L9.27 32.71 9.27 42.42C9.27 45.65 11.9 48.27 15.13 48.27L15.48 48.27C17.27 48.27 18.85 47.45 19.93 46.19 20.96 47.12 22.32 47.7 23.82 47.7L23.91 47.7C22 49.45 20.75 51.5 20.45 53.5 20.31 54.45 20.97 55.32 21.91 55.46 21.99 55.48 22.08 55.48 22.17 55.48 23.01 55.48 23.74 54.87 23.87 54.01 24.13 52.3 25.74 50.32 28.07 48.86 30.37 47.42 32.89 46.75 35.11 46.93 35.29 46.94 35.47 46.95 35.65 46.98 35.95 47.42 36.46 47.71 37.03 47.71 37.69 47.71 38.24 47.34 38.52 46.8 38.72 46.61 38.87 46.37 38.96 46.1 39.12 45.57 39.02 45.03 38.73 44.61L38.73 31.14C38.77 28.23 41.13 25.86 44.05 25.84L44.05 47.17 44.05 47.17Z" id="Shape" fill="#d5505f" fill-rule="nonzero"/></g></svg></span><h3>You rock!</h3> <h4>Like the idea? Help us spread the word.</h4><p> <a class="twittering" target = "blank_target" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check%20out%20@soupjammer%20at%20http://www.soupjam.org/!%20Listen%20to%20music%20for%20a%20good%20cause!"data-size="large"><img src="images/Twitter-logo-300x299.png"></a><a class="booking" target="_blank" href="http://facebook.com/soupjam/"><img src="images/Facebook-logo-300x299.png"></a></p> Thanks for listening to <a href="http://leoaether.com/" target="_blank">Leo Aether</a>.</p><hr/><span class="biocircle left"></span><h6>More about the artist</h6><p class="smallerartist">Leo Aether is a singer-songwriter born in Bogotá, Colombia. For more information on Leo Aether, <a target="_blank" href="http://leoaether.com/">click here</a>.</p><div class="a2a_kit a2a_kit_size_32 a2a_default_style"><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a></div></div></div>');
-			                $('#prototype').append(leoEather);
-			                $('#player').remove();
-							//var bannerValue = document.getElementById('directional-header');
-							//console.log('bannerValue is', bannerValue);
-							//bannerValue.color = black;
-			                //$( "#dialog" ).dialog();
-			            }
-
-			        }
-
-			    </script>
-
-
-		<!--script for twitter custom message-->
-		<!--
-			<script>
-		var a2a_config = a2a_config || {};
-		a2a_config.linkname = "Soup Jam";
-		a2a_config.linkurl = "http://www.soupjam.org";
-		a2a_config.num_services = 2;
-		a2a_config.templates = {
-		    twitter: "I just fed someone just for listening on ${title} ${link} thanks to @AddToAny music and @suessupershells."
-		};
-		</script>
--->
-
-<!--
-<p class = "twittering">Share the awesomeness on <a class="twitter-share-button"href="https://twitter.com/intent/tweet?text=Check%20out%20@soupjammer%20at%20http://www.soupjam.org/!%20Listen%20to%20music%20for%20a%20good%20cause!"data-size="large">Twitter</a>!
-<a href="https://twitter.com/intent/tweet?screen_name=soupjammer" class="twitter-mention-button" data-text="I&#39;m going to feed with music with the help of artist @LeoAether and @GOTGmarvel! Check out more at http://soupjam.org" data-show-count="false">Tweet to @soupjammer</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a class="twitter-follow-button"href="https://twitter.com/SoupJammer"data-size="large">Follow @SoupJammer</a>
--->
-	</body>
+</body>
 </html>
