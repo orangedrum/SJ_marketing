@@ -51,6 +51,30 @@
 
 </head>
 <body>
+  <!--FACEBOOK PIXEL ANALYTICS-->  
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '267422253786232',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.11'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!--END FACEBOOK PIXEL ANALYTICS-->
+
   <header class="navbar">
     <div class="w-container">
       <div class="w-row">
@@ -83,8 +107,12 @@
       </div>
     </div>
   </div>
+</div><!--according to browers, THIS is where the end div for souphero goes-->
   <div class="section black">
-    <div class="feature-text">a new artist every week<br>a new Connection to your soul!!!!</div>
+    <div class="feature-text">
+      <!--incase we want to bait potential advertisers<img src="http://www.ourtownsarasota.com/wp-content/uploads/2017/08/600x160-ad-placeholder.jpg" height="auto" alt="">-->
+      <img src="https://beachnboat.com/wp-content/uploads/2014/04/3-4-banner.jpg">
+    </div>
   </div>
   <div class="section hero">
     <div class="center-house w-container"><img src="images/NewMusicHeadline.png" srcset="images/NewMusicHeadline.png 500w, images/NewMusicHeadline.png 800w, images/NewMusicHeadline.png 1080w, images/NewMusicHeadline.png 1282w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 940px">
@@ -109,7 +137,7 @@
       <div>
         <!--Subscription Form-->
         <div class="w-form">
-          <!-- NASTY MailChimp Signup Form -->
+          <!-- NASTY MailChimp Signup Forms -->
 
             <div id="mc_embed_signup">
             <form action="https://soupjam.us2.list-manage.com/subscribe/post?u=362bea6e58525666e1a4b8f86&amp;id=002aec07ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form formjam w-clearfix" target="_blank" novalidate>
@@ -122,7 +150,7 @@
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
               </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-button subscribe w-button"></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="firstkpi submit-button subscribe w-button"></div>
                 </div>
             </form>
             </div>
@@ -244,6 +272,15 @@
     <script src="js/sweetmodal/jquery.sweet-modal.min.js"></script>
 
     <script>
+      //FACEBOOK ANALYTICS EVENTS
+      $(".firstkpi").click(function(){
+          //alert("test");
+          // Add this to a button's onclick handler
+          FB.AppEvents.logEvent("subscribed");
+      });
+
+
+
       // create youtube player
       var player;
       function onYouTubePlayerAPIReady() {
@@ -279,6 +316,7 @@
         }
       }
     </script>
+
 
 </body>
 </html>
