@@ -49,6 +49,9 @@
   </script>
   <!--END GOOGLE ADSENSE-->
 
+  <!--Mailchimp-->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/362bea6e58525666e1a4b8f86/ec33c43a16af919f5a0ff62de.js");</script>
+  <!--Mailchimp-->
 </head>
 <body>
   <!--FACEBOOK PIXEL ANALYTICS-->  
@@ -79,7 +82,7 @@
   <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0071/6771.js" async="async"></script>
   <!--END CRAZYEGG-->
 
-  <header class="navbar">
+  <header class="navbar" id="header">
     <div class="w-container">
       <div class="w-row">
         <div class="w-clearfix w-col w-col-4"><img src="images/soupjamlogo.png" width="63" class="logo"></div>
@@ -104,6 +107,7 @@
         <div class="w-col w-col-6">
           <h1 class="hero-header text-right w-hidden-small w-hidden-tiny">You Rock.</h1>
           <h1 class="hero-iphone hero-header w-hidden-main w-hidden-medium">You Rock. He Eats.</h1>
+          <a href="#explain" style="color: white"><span class="text-span">Learn More</span></a>
         </div>
         <div class="w-hidden-small w-col w-col-6">
           <h1 class="hero-header w-hidden-small w-hidden-tiny">He Eats.</h1>
@@ -123,7 +127,7 @@
       <h2>Check back every week for a new artist</h2>
     </div>
   </div>
-  <div class="w-row">
+  <div class="w-row" id="explain">
     <div class="hub hub-musician w-col w-col-4"><img src="images/band.png" alt="illustration of a band playing live" class="image">
       <p class="hub-p">Discover new local bands</p>
     </div>
@@ -132,6 +136,11 @@
     </div>
     <div class="hub w-col w-col-4"><img src="images/hungry.png" alt="illustration of someone serving soup to someone else" class="image-3">
       <p class="hub-p">The hungry are fed with every play.</p>
+    </div>
+  </div>
+  <div class="section-2">
+    <div>
+      <div class="looplink">Watch video to end to <a href="#header" style="color: white">try it out!</a></div>
     </div>
   </div>
   <div id="SubscribeSection" class="section grey">
@@ -317,7 +326,7 @@
            //remove player, add soupjam block
             $('#demo').append(soupjamBadge);
             $('.videoWrapper').remove();
-        }
+        } //and (YT.PlayerState.PAUSED);
       }
     </script>
 
