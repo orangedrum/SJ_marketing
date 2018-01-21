@@ -751,6 +751,38 @@ p {
   color: #fff;
 }
 
+.link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.text-span {
+  color: #fff;
+}
+
+.section-2 {
+  background-color: #745785;
+  background-image: -webkit-linear-gradient(270deg, #7e5785, #e917fc);
+  background-image: linear-gradient(180deg, #7e5785, #e917fc);
+}
+
+.looplink {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #fff;
+  text-align: center;
+}
+
 html.w-mod-js *[data-ix="display-none-on-load"] {
   display: none;
 }
