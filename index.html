@@ -24,7 +24,10 @@
   <script src="js/modernizr-2.7.1.js"></script>
 
   <!--Mailchimp-->
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/362bea6e58525666e1a4b8f86/ec33c43a16af919f5a0ff62de.js");</script>
+  <script id="mcjs">
+    !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/362bea6e58525666e1a4b8f86/ec33c43a16af919f5a0ff62de.js");
+      fbq('track', 'CompleteRegistration');
+  </script>
   <!--Mailchimp-->
 
   <!-- Facebook Pixel Code -->
@@ -48,6 +51,11 @@
 </head>
 
 <body>
+  <!--FB Lead-->
+  <script>
+    fbq('track', 'Lead');
+  </script>
+
   <!--SDK for facebook comments-->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -157,8 +165,11 @@
         </div>
         
         <div class="iphone wow fadeInUp" data-wow-delay="1s">
-	        <iframe width="442" height="935" src="http://invis.io/8QKSQ23469B" frameborder="0" allowfullscreen></iframe>
-
+	        <iframe width="442" height="935" src="http://invis.io/8QKSQ23469B" frameborder="0" allowfullscreen>
+          </iframe>
+          <script>
+            fbq('track', 'ViewContent');
+          </script>
           <!-- <img src="img/iphone.png"> -->
         </div>
       </div>
